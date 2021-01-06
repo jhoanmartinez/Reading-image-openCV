@@ -41,11 +41,11 @@ print(imgNew.shape)
 
 """" Copiar la imagen original encima de la
     mitad de la imagen negra"""
-imgNew[:407][:] = img
+imgNew[:407, :, :] = img
 
 """ ver imagenes """
-# plt.imshow(imgNew[:, :, ::-1])
-# plt.show()
+plt.imshow(imgNew[:, :, ::-1])
+plt.show()
 print(imgNew.shape)
 
 """" Voltear la imagen original
